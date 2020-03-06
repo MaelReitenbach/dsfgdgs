@@ -1,0 +1,3 @@
+<h5>Objet: <%= @email.object %></h5>
+<p><%= @email.body %></p>
+<%= button_to "Delete", email_path(@email.id), :method => :delete, class:"btn-sm", remote: true%>
